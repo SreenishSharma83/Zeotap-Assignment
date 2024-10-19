@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f7fa;
+}
+
+.weather-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+  gap: 20px;
+  margin-top: 20px;
+  justify-items: center; /* Centers the items horizontally */
+}
+
+.weather-card {
+  background: linear-gradient(135deg, #73a5ff, #5477f5); /* Gradient background */
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 270px;
+  text-align: left;
+  color: #fff; /* White text for contrast */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.weather-card:hover {
+  transform: translateY(-10px); /* Subtle lift effect */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Bigger shadow on hover */
+}
+
+.weather-card h2 {
+  margin-top: 0;
+  font-size: 1.75rem;
+  color: #fff;
+}
+
+.weather-card p {
+  margin: 8px 0;
+  color: #f0f0f0;
+  font-size: 1rem;
+}
+
+.weather-card .temperature {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffcc00; /* Gold color for temperature */
+}
+
+.weather-card .condition {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+.weather-card .condition img {
+  width: 30px;
+  height: 30px;
+}
+
+/* General layout enhancements */
+input, button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #5477f5;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #415bb5; /* Darker on hover */
+}
