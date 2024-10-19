@@ -30,8 +30,8 @@ Before running this project, ensure you have the following installed:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/weather-app.git
-   cd weather-app
+   git clone https://github.com/sreenishsharma83/Zeotap-Assignment.git
+   cd Zeotap-Assignment/Weather-app
 2. **Install dependencies for both backend and frontend:**
    - For backend:
      ```bash
